@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "endpoint": "/users",
+      "destination": {
+        "uri": "http://localhost:54988/api/Users/",
+        "requiresAuthentication": "true"
+      }
+    },
+    {
+      "endpoint": "/documents",
+      "destination": {
+        "uri": "http://quants/beat/bflow/configurable/Dev/API/Documents/",
+        "requiresAuthentication": "true"
+      }
+    },
+    {
+      "endpoint": "/auth",
+      "destination": {
+        "uri": "http://localhost:53390/api/Auth/",
+        "requiresAuthentication": "false"
+      }
+    }
+  ],
+  "authenticationService": {
+    "uri": "http://localhost:53390/api/Auth/"
+  }
+}
